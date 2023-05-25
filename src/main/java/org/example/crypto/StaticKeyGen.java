@@ -68,7 +68,7 @@ class StaticKeyGen {
             System.out.println(LVL_PRIORITY_ERROR + "Empty array");
             return ERROR_BYTE_ARRAY;
         }
-        byte[] keyAsByteArr = new byte[]{0};
+        byte[] keyAsByteArr;
         try {
             int s_len = s.length();
             char[] charArrFromStr = s.toCharArray();
